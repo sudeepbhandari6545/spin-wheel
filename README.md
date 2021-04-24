@@ -1,2 +1,2 @@
-# spin-wheel.github.io
+# sudeepbhandari6545.spin-wheel.github.io
 spin wheel
