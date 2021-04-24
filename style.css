@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*our spinner wheel*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.spinner {
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+  display: flex;
+  border-radius: 50%;
+  border: 10px solid black;
+  position: relative;
+  overflow: hidden;
+  transition: 5s;
+  top: 100px;
+}
+.spinner div {
+  height: 50% !important;
+  width: 240px !important;
+  position: absolute;
+  clip-path: polygon(100% 0, 50% 100%, 0 0);
+  transform: translate(-50%);
+  transform-origin: bottom;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  left: 130px;
+}
+.spinner_one {
+  background-color: blue;
+  left: 50% !important;
+}
+.spinner_two {
+  background-color: orange;
+  transform: rotate(36deg) !important;
+}
+.spinner_three {
+  background-color: red;
+  transform: rotate(72deg) !important;
+}
+.spinner_four {
+  background-color: green;
+  transform: rotate(108deg) !important;
+}
+.spinner_five {
+  background-color: gray;
+  transform: rotate(144deg) !important;
+}
+.spinner_six {
+  background-color: black;
+  transform: rotate(180deg) !important;
+}
+.spinner_seven {
+  background-color: brown;
+  transform: rotate(216deg) !important;
+}
+.spinner_eight {
+  background-color: lightgreen;
+  transform: rotate(252deg) !important;
+}
+.spinner_nine {
+  background-color: lightgray;
+  transform: rotate(288deg) !important;
+}
+.spinner_ten {
+  background-color: purple;
+  transform: rotate(324deg) !important;
+}
+.arrow {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%);
+  color: green;
+}
+.arrow:before {
+  content: '\1F817';
+  font-size: 60px;
+}
+#spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: white;
+  text-transform: uppercase;
+  border: 10px solid red;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+}
